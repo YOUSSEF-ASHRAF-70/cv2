@@ -1,0 +1,188 @@
+
+body{
+    margin : 0;
+background-color: rgb(56, 56, 56);
+color: black;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1rem;
+}
+header h1 {
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+header nav a {
+    color: rgb(167, 162, 162);
+    text-decoration: none;
+    padding: 0 1rem;
+}
+#hero {
+   background-image: url("HTTPS://shorturl.at/ceGNR");
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+#hero h2 {
+    margin: 0;
+    color: black;
+}
+#hero button {
+    background-color: #333;
+    color:aliceblue;
+    padding: 0.5rem 1rem;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+section {
+    padding: 2rem;
+}
+section h2 {
+    margin-top: 0;
+}
+footer {
+    background-color:rgb(255, 255, 255);}
+section-active {
+    background-color: rgb(240, 0, 0);
+    
+}
+
+
+@media (min-width: 576px) { 
+    .landing__container {
+    max-width: 550px;
+    padding: 4em;
+    } 
+}
+
+@media (min-width: 768px) { 
+    .landing__container {
+    max-width: 740px;
+    padding: 4em;
+    } 
+}
+
+@media (min-width: 992px) { 
+    .landing__container {
+    max-width: 950px;
+    padding: 4em;
+    } 
+}
+
+@media (min-width: 1200px) { 
+    .landing__container {
+    max-width: 1150px;
+    padding: 4em;
+    } 
+}
+
+@media (min-width: 1400px) { 
+    .landing__container {
+    max-width: 1350px;
+    padding: 4em;
+    }
+}img{
+    width: 200px;
+    height: 200px;
+    
+}
+.wrapper{
+    display: inline-flex;
+}
+.wrapper .icon{
+    margin: 0 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 0.4s cubic-bezier(0.68,-0,55,0.265,1.55);
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+.wrapper .icon span{
+    height: 60px;
+    position: relative;
+    z-index: 2;
+    width: 60px;
+    display: block;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgb(0,0,0,0.1);
+}
+.wrapper .icon span i{
+    font-size: 25px;
+    line-height: 60px;
+}
+.wrapper .icon .tooltip{
+    position: absolute;
+    top: 0px;
+    background: #fff;
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    color: #fff;
+    box-shadow: 0 10px 10px rgb(0,0,0,0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68,-0,55,0.265,1.55);
+}
+.wrapper .icon:hover .tooltip{
+    opacity: 1;
+    pointer-events: auto;
+    top: -70px;
+}
+.wrapper .icon .tooltip::before{
+    position: absolute;
+    content:none ;
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    bottom: -8px;
+    left: 50px;
+    transform: translatex(-50%) rotate(45deg);
+}
+.wrapper .icon:hover span
+.wrapper .icon:hover .tooltip{
+    text-shadow: 0px --1px 0px rgba(0,0,0,0.4);
+}
+.wrapper .facebook:hover span,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before{
+    background: #3b5999;
+}
+.wrapper .icon:hover span i{
+    color: #fff;
+}
+.wrapper .Twitter:hover span,
+.wrapper .Twitter:hover .tooltip,
+.wrapper .Twitter:hover .tooltip::before{
+    color: #46c1f6;
+}
+
+.wrapper .Instegram:hover span,
+.wrapper .Instegram:hover .tooltip,
+.wrapper .Instegram:hover .tooltip::before{
+    color: #e1306c;
+}
+
+.wrapper .WhatsApp:hover span,
+.wrapper .WhatsApp:hover .tooltip,
+.wrapper .WhatsApp:hover .tooltip::before{
+    color: rgba(0, 128, 0, 0.719);
+}
+table{
+    width: 100%;
+}
+table td{
+    padding: 15px;
+}
